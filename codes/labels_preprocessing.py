@@ -4,9 +4,8 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 
-train_labels_loc = "DataCadot/labels/train"
-test_labels_loc = "DataCadot/labels/valid"
-
+train_labels_loc = "DataCadot/labels/train_bis"
+test_labels_loc = "DataCadot/labels/train"
 def get_labels(path):
     labels_loc = os.path.join(os.getcwd(), path)
     labels = defaultdict(list)
@@ -19,11 +18,12 @@ def get_labels(path):
                     parts = line.split()
                     if len(parts) > 0:
                         label = parts[0]
-                        labels[i].append(label)
+                        labels[i].append(label) 
     return dict(labels)
 
 y_train_labels = get_labels(train_labels_loc)
 y_train_flat_labels = [int(lab) for labs in y_train_labels.values() for lab in labs]
+print(y_train_labels)
 
 y_test_labels = get_labels(test_labels_loc)
 y_test_flat_labels = [int(lab) for labs in y_test_labels.values() for lab in labs]
