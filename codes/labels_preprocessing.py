@@ -4,8 +4,8 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 
-train_labels_loc = "DataCadot/labels/train_bis"
-test_labels_loc = "DataCadot/labels/train"
+train_labels_loc = "DataCadot/labels/train"
+test_labels_loc = "DataCadot/labels/valid"
 def get_labels(path):
     labels_loc = os.path.join(os.getcwd(), path)
     labels = defaultdict(list)
