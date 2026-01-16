@@ -12,3 +12,6 @@ Notebook dédié au **prétraitement des données** :
 ### 🐍 labels_preprocessing.py
 Script Python pour :
 - l’**analyse et l’affichage de la distribution des classes** dans les datasets
+
+## Objectif
+Analyser et préparer les données (data augmentation) avant l’entraînement de modèles de détection d’objets.
